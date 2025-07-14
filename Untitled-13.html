@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabFocus()">
+
+  <h1>My Accessible Photo Gallery</h1>
+  <p>Hover or focus on an image to preview it above.</p>
+
+  <div id="image">Hover over an image below to display here.</div>
+
+  <div class="gallery">
+    <img src="img1.jpg" alt="Mountains at sunrise" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="img2.jpg" alt="Calm lake with trees" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="img3.jpg" alt="City skyline at night" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="img4.jpg" alt="Beach with waves" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="img5.jpg" alt="Forest trail" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="img6.jpg" alt="Snowy mountain peak" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
